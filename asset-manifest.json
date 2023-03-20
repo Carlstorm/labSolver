@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/labSolver/static/css/main.b9c5d423.css",
+    "main.js": "/labSolver/static/js/main.2dc9dc17.js",
+    "index.html": "/labSolver/index.html",
+    "main.b9c5d423.css.map": "/labSolver/static/css/main.b9c5d423.css.map",
+    "main.2dc9dc17.js.map": "/labSolver/static/js/main.2dc9dc17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9c5d423.css",
+    "static/js/main.2dc9dc17.js"
+  ]
+}
