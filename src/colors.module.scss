@@ -1,0 +1,22 @@
+$color-white: white;
+$color-blue: #154f8b;
+$color-dark-blue: #0f3d6d;
+$color-light-blue: #a9e3ff;
+$color-green: #0ec571;
+$color-dark: #292b36;
+$color-border: #00000050;
+$color-border-transparent: #00000010;
+$color-light-grey: #e1e1e1;
+$color-red: #d95252;
+
+:export {
+    color_white: $color-white;
+    color_blue: $color-blue;
+    color_light_blue: $color-light-blue;
+    color_green: $color-green;
+    color_dark: $color-dark;
+    color_border: $color-border;
+    color_border_transparent: $color-border-transparent;
+    color_light_grey: $color-light-grey;
+    color_red: $color-red;
+}

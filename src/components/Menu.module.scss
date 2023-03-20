@@ -1,0 +1,115 @@
+@import '../colors.module.scss';
+
+.component {
+    border-bottom: 1px solid $color-blue;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 32px;
+    padding: 0 16px;
+}
+
+.section {
+    display: flex;
+    gap: 8px;
+    height: 52px;
+    align-items: center;
+    &>p {
+        font-weight: bold;
+        color: $color-blue;
+        font-family: monospace;
+        font-size: 14px;
+        margin: 0;
+    }
+
+
+    &_end {
+        flex-direction: row-reverse;
+        @extend .section;
+        flex: 1;
+        &>div {
+            height: 38px;
+            aspect-ratio: 1;
+            cursor: pointer;
+            &>svg {
+                fill: $color-blue;
+                border-radius: 50%;
+                &>path {
+                    fill: $color-blue !important;
+                }
+                &:hover {
+                    fill: $color-white;
+                    background-color: $color-blue;
+                }
+            }
+        }
+    }
+}
+
+.button {
+    background: $color-white;
+    &_wall {
+        @extend .button;
+        fill: $color-dark;
+        border-color: $color-dark;
+        &_active {
+            fill: $color-white !important;
+            background: $color-dark;
+            @extend .button_wall;
+        }
+    }
+    &_start {
+        @extend .button;
+        fill: $color-blue;
+        border-color: $color-blue;
+        &_active {
+            fill: $color-white !important;
+            background: $color-blue;
+            @extend .button_start;
+        }
+    }
+    &_goal {
+        @extend .button;
+        fill: $color-green;
+        border-color: $color-green;
+        &_active {
+            fill: $color-white !important;
+            background: $color-green;
+            @extend .button_goal;
+        }
+    }
+    &_eraser {
+        @extend .button;
+        fill: $color-red;
+        border-color: $color-red;
+        &_active {
+            fill: $color-white !important;
+            background: $color-red;
+            @extend .button_eraser;
+        }
+    }
+    &_text {
+        padding: 5px 16px;
+        border-width: 1px;
+        min-width: 124px;
+        height: auto;
+        aspect-ratio: initial;
+        cursor: pointer;
+        &:hover {
+            background: $color-blue;
+            &>p {
+                color: white !important;
+            }
+        }
+    }
+}
+
+.trash {
+    transform: translateY(-1px);
+    aspect-ratio: 1;
+    height: 24px;
+    fill: $color-blue;
+    cursor: pointer;
+    &:hover {
+        fill: $color-red;
+    }
+}

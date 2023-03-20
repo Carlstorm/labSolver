@@ -1,0 +1,15 @@
+@import '../../colors.module.scss';
+
+.component {
+    border: 2px solid $color-blue;
+    height: 24px;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &>svg {
+        height: 18px;
+    }
+}

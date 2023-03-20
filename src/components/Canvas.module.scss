@@ -1,0 +1,13 @@
+@import '../colors.module.scss';
+
+.component {
+    background: $color-dark;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    cursor: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

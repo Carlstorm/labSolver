@@ -1,0 +1,49 @@
+@import '../../colors.module.scss';
+
+.component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+    &>div {
+        height: 20px;
+        width: 200px;
+        position: relative;
+    }
+}
+
+.point {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background: $color-blue;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    &:hover {
+        background: $color-dark-blue;
+    }
+}
+
+.bar {
+    width: 200px;
+    height: 4px;
+    transform: translateY(-50%);
+    top: 50%;
+    position: absolute;
+    &_filled {
+        @extend .bar;
+        background: $color-blue;
+        z-index: 2;
+        width: 0;
+    }
+
+    &_empty {
+        @extend .bar;
+        background: $color_light_grey;
+        z-index: 1;
+    }
+}
